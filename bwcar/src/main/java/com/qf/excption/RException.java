@@ -24,7 +24,7 @@ public class RException extends RuntimeException {
         return msg;
     }
 
-    public void setMsg(String msf) {
-        this.msg = msf;
+    public void setMsg(String mss) {
+        this.msg = mss;
     }
 }
