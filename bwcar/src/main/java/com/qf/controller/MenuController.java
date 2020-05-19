@@ -2,6 +2,7 @@ package com.qf.controller;
 
 import com.qf.dto.DataGridResult;
 import com.qf.dto.QueryDTO;
+import com.qf.log.MyLog;
 import com.qf.pojo.SysMenu;
 import com.qf.service.MenuService;
 import com.qf.utils.R;
@@ -22,6 +23,8 @@ public class MenuController {
     @Autowired
     private MenuService menuService;
 
+
+    @MyLog("菜单列表")
     @RequestMapping("/sys/menu/list")
     @ResponseBody
     @RequiresPermissions("sys:menu:list")
@@ -29,6 +32,7 @@ public class MenuController {
         return menuService.findMenu(queryDTO);
     }
 
+    @MyLog("菜单删除")
     @RequestMapping("/sys/menu/del")
     @ResponseBody
     public R deleteMenu(@RequestBody List<Long> ids){

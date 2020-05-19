@@ -5,11 +5,11 @@ public class RException extends RuntimeException {
     private String msg;
 
     public RException() {
-        super();
+
     }
 
-    public RException(String message) {
-        super(message);
+    public RException(String msg) {
+        this.msg = msg;
     }
 
     public int getCode() {
@@ -24,7 +24,7 @@ public class RException extends RuntimeException {
         return msg;
     }
 
-    public void setMsg(String msg) {
+    public void setMsg(String ms) {
         this.msg = msg;
     }
 }
