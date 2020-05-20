@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
 @MapperScan("com.qf.dao")
-//@ServletComponentScan(basePackages = "com.qf.config")
+@ServletComponentScan(basePackages = "com.qf.config")
 public class BwcarApplication {
 
     public static void main(String[] args) {

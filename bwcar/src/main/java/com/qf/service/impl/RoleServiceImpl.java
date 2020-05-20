@@ -1,6 +1,10 @@
 package com.qf.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.qf.dao.SysRoleMapper;
+import com.qf.dto.DataGridResult;
+import com.qf.dto.QueryDTO;
+import com.qf.pojo.SysRole;
 import com.qf.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,4 +22,6 @@ public class RoleServiceImpl implements RoleService {
     public List<String> findRolesByUserID(Long userId) {
         return sysRoleMapper.findRolesByUserId(userId);
     }
+
+
 }
