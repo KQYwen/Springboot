@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--  配置一个bean，将指定类配置给Spring，让spring创建其对象的实例  -->
+    <bean id="helloSpring" class="com.ssm.HelloSpring">
+<!-- 给属性赋值-->
+        <property name="userName" value="温彬"></property>
+    </bean>
+    <bean id="adminInfo" class="com.ssm.ectity.AdminInfo">
+        <property name="id" value="5"/>
+        <constructor-arg name="name" value="admin"></constructor-arg>
+        <constructor-arg name="pwd" value="120831"></constructor-arg>
+    </bean>
+<!--  p空间命名空间简化注入  -->
+    <bean id="admin" class="com.ssm.ectity.AdminInfo" p:id="8"
+    p:name="yzpc" p:pwd="120831"></bean>
+    <!--   配置创建UserDAOImpl的实例-->
+    <bean id="userDAO" class="com.ssm.dao.impl.UserDaoImpl"></bean>
+    <!--配置创建UserServiceImpl的实例-->
+    <bean id="userService" class="com.ssm.service.impl.UserServiceImpl">
+        <!-- 属性Setter方法依赖注入数据访问层组件-->
+        <property name="userDAO" ref="userDAO"/>
+    </bean>
+</beans>
