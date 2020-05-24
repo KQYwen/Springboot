@@ -1,6 +1,7 @@
 package com.ssm;
 
 import com.ssm.service.UserService;
+import com.ssm.service.impl.UserServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
