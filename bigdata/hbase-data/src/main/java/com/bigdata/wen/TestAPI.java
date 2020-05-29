@@ -85,7 +85,7 @@ public class TestAPI {
         //4.循环添加列族信息
         for (String cf :
                 cfs) {
-            //5.创建列族描述器
+            //5.创建列族描述
             HColumnDescriptor hColumnDescriptor = new HColumnDescriptor(cf);
 
             //6.添加具体列族信息
