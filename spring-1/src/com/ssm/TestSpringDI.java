@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TestSpringDI {
     public static void main(String[] args){
         //加载配置文件
-        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext2.xml");
         //获取配置中的UserServiceImpl实例
         UserService userService= (UserService) context.getBean("userService");
         boolean flag=userService.login("admin","120831");

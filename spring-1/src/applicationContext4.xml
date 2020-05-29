@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+         http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context.xsd">
+<!--&lt;!&ndash;     实例化业务类Bean&ndash;&gt;-->
+<!--    <bean id="productService" class="com.ssm.service.impl.ProductServiceImpl"></bean>-->
+<!--&lt;!&ndash;    实例化日志通知/增强处理类（切面）的Bean&ndash;&gt;-->
+<!--    <bean id="allLogAdvice" class="com.ssm.aop.ALLLogAdvice"></bean>-->
+<!--&lt;!&ndash;    配置Aop&ndash;&gt;-->
+<!--    <aop:config>-->
+<!--&lt;!&ndash;        配置日志切面&ndash;&gt;-->
+<!--        <aop:aspect id="logaop" ref="allLogAdvice">-->
+<!--&lt;!&ndash;        定义切入点。切入点采用正则表达式，含义是对browse的方法的拦截&ndash;&gt;-->
+<!--           <aop:pointcut expression="execution(public void browse(String,String))" id="logpointcut"/>-->
+<!--&lt;!&ndash;         将日志通知类中的myBeforeAdvice方法指定为前置通知 &ndash;&gt;-->
+<!--&lt;!&ndash;            <aop:before method="myBeforeAdvice"&ndash;&gt;-->
+<!--&lt;!&ndash;                        pointcut-ref="logpointcut"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <aop:after-returning method="myAfterReturnAdvice"&ndash;&gt;-->
+<!--&lt;!&ndash;                                 pointcut-ref="logpointcut"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <aop:after-throwing method="myThrowAdvice"&ndash;&gt;-->
+<!--&lt;!&ndash;                                pointcut-ref="logpointcut" throwing="e"/>&ndash;&gt;-->
+
+<!--            <aop:around method="myAroundAdvice"-->
+<!--                        pointcut-ref="logpointcut"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+
+<!--    配置自动扫描包-->
+    <context:component-scan base-package="com.ssm"/>
+
+<!--    开启基于@AspectJ切面的注解处理器-->
+    <aop:aspectj-autoproxy/>
+
+</beans>
