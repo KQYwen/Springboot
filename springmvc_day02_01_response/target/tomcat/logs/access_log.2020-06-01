@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:40 +0800] "GET / HTTP/1.1" 200 105 http-bio-8080-exec-1 309
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:46 +0800] "GET /response.jsp HTTP/1.1" 200 1405 http-bio-8080-exec-2 37
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:46 +0800] "GET /js/jquery.min.js HTTP/1.1" 200 85582 http-bio-8080-exec-3 20
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:48 +0800] "GET /user/testVoid HTTP/1.1" 200 6 http-bio-8080-exec-4 11
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:51 +0800] "GET /response.jsp HTTP/1.1" 200 1405 http-bio-8080-exec-5 1
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:52 +0800] "GET /user/testString HTTP/1.1" 200 135 http-bio-8080-exec-6 73
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:56 +0800] "GET /response.jsp HTTP/1.1" 200 1405 http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:56 +0800] "GET /user/testModelAndView HTTP/1.1" 200 135 http-bio-8080-exec-8 5
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:57 +0800] "GET /response.jsp HTTP/1.1" 200 1405 http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:58 +0800] "GET /user/testForwardOrRedirect HTTP/1.1" 302 - http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:58 +0800] "GET /index.jsp HTTP/1.1" 200 105 http-bio-8080-exec-10 1
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:27:59 +0800] "GET /response.jsp HTTP/1.1" 200 1405 http-bio-8080-exec-10 1
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:28:00 +0800] "POST /user/testAjax HTTP/1.1" 200 56 http-bio-8080-exec-10 70
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:28:53 +0800] "GET /user/testString HTTP/1.1" 200 135 http-bio-8080-exec-10 4
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:30:02 +0800] "GET /response.jsp HTTP/1.1" 200 1405 http-bio-8080-exec-6 1
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:30:04 +0800] "GET /user/testForwardOrRedirect HTTP/1.1" 302 - http-bio-8080-exec-6 2
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:09:30:04 +0800] "GET /index.jsp HTTP/1.1" 200 105 http-bio-8080-exec-6 1
